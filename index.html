@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しょーでんの自作PC特化ブログ</title>
+    <style>
+        :root {
+            --primary-color: #0078d7;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --box-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+            letter-spacing: 2px;
+        }
+
+        .intro-box {
+            background-color: #2c2c2c;
+            color: #f1f1f1;
+            max-width: 800px;
+            margin: -2rem auto 2rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background-color: var(--box-bg);
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .step-card h3 {
+            margin-top: 0;
+            color: #2c2c2c;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #d93025;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>しょーでんの自作PC特化ブログ</h1>
+    </header>
+
+    <div class="intro-box">
+        実際にPC選びで失敗に失敗を重ねて、そのうちに知識がついたしょーでんが書くブログです。<br><br>
+        CPUだけを見て安いパソコンで失敗したり、とにかく性能が良さそうなMacをただ性能が高そうってだけで選んじゃったり、CPUとマザーボードの互換性が合わなくてミスったり、グラボ適当に選んじゃってしょぼかったり...<br><br>
+        など、失敗に失敗を重ねて知識がついたので、読者が同じように遠回りしないように、自分にピッタリな自作PCが作れるようにこのブログを更新します。
+    </div>
+
+    <div class="container">
+        <h2>初心者必見！失敗しない自作PCパーツ選びの正しい順番と基礎知識</h2>
+        <p>自作PCは「パーツの互換性」が命です。適当に買ってしまうと、物理的に組み立てられないという悲劇が起きます（僕も経験済みです）。ここでは、絶対に失敗しないための「パーツ選びの順番」と「それぞれの役割」を分かりやすく解説します。</p>
+
+        <div class="step-card">
+            <h3><span class="step-number">1</span>CPUを決める（パソコンの頭脳）</h3>
+            <p>まずはすべての中心となるCPU（Intel Coreシリーズか、AMD Ryzenシリーズか）を決めます。ゲームをメインにするのか、動画編集をするのか、予算はどれくらいかで選びます。</p>
+            <p><strong>注意点：</strong>「Core i7だから絶対に性能が良い」とは限りません。数年前の古いCore i7より、最新のCore i3の方が性能が高いこともよくあります。「世代」をしっかり確認しましょう。</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">2</span>対応するマザーボードを決める（すべての土台）</h3>
+            <p>CPUが決まったら、それを乗せる基板（マザーボード）を選びます。<span class="highlight">ここが一番の失敗ポイントです！</span></p>
+            <p>CPUには「ソケット」という物理的な形（ピンの配列など）があります。IntelのCPUをAMD用のマザーボードに乗せることはできませんし、同じIntelでも世代が違うとソケットの形が変わってハマりません。必ず「選んだCPUが対応しているソケット（LGA1700、AM5など）」のマザーボードを選びましょう。</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">3</span>グラフィックボードを決める（映像処理の要）</h3>
+            <p>ゲームを快適にプレイしたり、3Dモデリングや動画編集をサクサク行うために最も重要なパーツです。NVIDIAのGeForce（RTXシリーズなど）が定番です。</p>
+            <p><strong>注意点：</strong>「とりあえず安いグラボ」を買うと、最新ゲームがカクカクで遊べないという悲しいことになります。自分が遊びたいゲームの「推奨スペック」を調べて、それに余裕で届く性能のもの（RTX 4060など）を選びましょう。</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">4</span>対応するメモリ・SSDを買う（作業机と引き出し）</h3>
+            <p><strong>メモリ（RAM）：</strong>パソコンの作業机の広さです。マザーボードによって「DDR4」か、最新の「DDR5」のどちらが使えるかが決まっています。間違えると刺さりません。ゲーム用なら32GBあると安心です。</p>
+            <p><strong>SSD（ストレージ）：</strong>データを保存する引き出しです。今はマザーボードに直接挿す「M.2 NVMe SSD」が圧倒的に早くておすすめです。容量は最低1TB、できれば2TB以上あるとゲームがたくさん入ります。</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">5</span>電源ユニットとPCケースを選ぶ</h3>
+            <p><strong>電源ユニット：</strong>各パーツに電気を送る心臓部です。全体の消費電力を計算し、その1.5〜2倍程度の容量（ワット数）を選ぶのが安全です。グラボが高性能なほど、大きな電源（750Wや850Wなど）が必要になります。</p>
+            <p><strong>PCケース：</strong>見た目も大事ですが、マザーボードのサイズ（ATXやMicro-ATXなど）が物理的に収まるか、そして巨大なグラフィックボードがケース内に干渉せずに長さに余裕を持って入るかを必ず寸法で確認してください。</p>
+        </div>
+
+        <div class="step-card">
+            <h3><span class="step-number">6</span>忘れがち！CPUグリスとOS（Windows）</h3>
+            <p>パーツが揃っても、これがないと動かせません！</p>
+            <p><strong>CPUグリス：</strong>CPUと冷却クーラーの間に塗る熱伝導材です（クーラーに最初から塗られている場合もありますが、よく冷える良いグリスを別で買うのがおすすめです）。</p>
+            <p><strong>OS：</strong>パソコンを動かすためのシステム（Windows 11など）です。自作PCにはOSが入っていないので、USBメモリ版などのOSを別途購入してインストールする必要があります。</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 しょーでんの自作PC特化ブログ All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
