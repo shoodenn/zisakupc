@@ -93,6 +93,51 @@
             color: #d93025;
         }
 
+        /* --- 記事一覧用のスタイルを追加 --- */
+        .article-list {
+            background-color: var(--box-bg);
+            padding: 1.5rem 2rem;
+            margin-top: 4rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-top: 5px solid #1a1a1a;
+        }
+
+        .article-list h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            color: #1a1a1a;
+        }
+
+        .article-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .article-list li {
+            margin-bottom: 0.8rem;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 0.5rem;
+        }
+
+        .article-list li:last-child {
+            border-bottom: none;
+        }
+
+        .article-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .article-list a:hover {
+            color: #005bb5;
+            text-decoration: underline;
+        }
+        /* --------------------------------- */
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -171,6 +216,21 @@
             <p><strong>CPUグリス：</strong>CPUと冷却クーラーの間に塗る熱伝導材です（クーラーに最初から塗られている場合もありますが、よく冷える良いグリスを別で買うのがおすすめです）。</p>
             <p><strong>OS：</strong>パソコンを動かすためのシステム（Windows 11など）です。自作PCにはOSが入っていないので、USBメモリ版などのOSを別途購入してインストールする必要があります。</p>
         </div>
+
+        <!-- 追加した記事一覧セクション -->
+        <div class="article-list">
+            <h2>記事一覧</h2>
+            <ul>
+                <li><a href="https://shoodenn.github.io/zisakupc/cpu.html">▶ CPUのおすすめと選び方</a></li>
+                <li><a href="https://shoodenn.github.io/zisakupc/mazabo.html">▶ マザーボードのおすすめと選び方</a></li>
+                <li><a href="https://shoodenn.github.io/zisakupc/GPU.html">▶ グラフィックボードのおすすめと選び方</a></li>
+                <li><a href="https://shoodenn.github.io/zisakupc/ram.html">▶ メモリのおすすめと選び方</a></li>
+                <li><a href="https://shoodenn.github.io/zisakupc/SSD.html">▶ SSDのおすすめと選び方</a></li>
+                <li><a href="https://shoodenn.github.io/zisakupc/denngenn.html">▶ 電源ユニットのおすすめと選び方</a></li>
+                <!-- 新しい記事を書いたら、ここに <li><a href="URL">記事タイトル</a></li> を追加してください -->
+            </ul>
+        </div>
+
     </div>
 
     <footer>
